@@ -64,7 +64,8 @@ preprocess = transforms.Compose([transforms.Resize((cfg.input_size, cfg.input_si
 
 #Page config (icon, title)
 st.set_page_config(page_title="Streamlit WebRTC Demo", page_icon=":shark:", layout="centered", initial_sidebar_state="auto")
-
+cache_key = "PIPNet"
+st.session_state[cache_key] = net
 
 #Sidebar:
 task_list = ["Video Stream", "Pictures"]
@@ -83,15 +84,17 @@ if task_name == task_list[0]:
             if self.style != new_style:
                 with self.model_lock:
                     self.style = new_style
-        def video_sleepy(self, frame, net, preprocess, input_size, net_stride, num_nb, use_gpu, device):
-            frame_width = frame.width
-            frame_height = frame.height
+        def recv(self, frame: av.VideoFrame) -> av.VideoFrame:
+            print("")
+            frame_preprocess = frame.to_ndarray(format="bgr24")
+            print("start processing")
+            frame_height, frame_width = frame_preprocess.shape[:2]
+            frame = frame_preprocess.copy()
             sleepy_frames = 0
-            detector = FaceBoxesDetector('FaceBoxes', 'FaceBoxesV2/weights/FaceBoxesV2.pth', use_gpu, device)
+            detector = FaceBoxesDetector('FaceBoxes', 'FaceBoxesV2/weights/FaceBoxesV2.pth', cfg.use_gpu, device)
             my_thresh = 0.9
             det_box_scale = 1.2
             net.eval()
-
 
             detections, _ = detector.detect(frame, my_thresh, 1)
             for i in range (len(detections)):
@@ -115,11 +118,11 @@ if task_name == task_list[0]:
                 det_height = det_ymax - det_ymin + 1
                 cv2.rectangle(frame, (det_xmin, det_ymin), (det_xmax, det_ymax), (0, 0, 255), 2)
                 det_crop = frame[det_ymin:det_ymax, det_xmin:det_xmax, :]
-                det_crop = cv2.resize(det_crop, (input_size, input_size))
+                det_crop = cv2.resize(det_crop, (cfg.input_size, cfg.input_size))
                 inputs = Image.fromarray(det_crop[:,:,::-1].astype('uint8'), 'RGB')
                 inputs = preprocess(inputs).unsqueeze(0)
                 inputs = inputs.to(device)
-                lms_pred_x, lms_pred_y, lms_pred_nb_x, lms_pred_nb_y, outputs_cls, max_cls = forward_pip(net, inputs, preprocess, input_size, net_stride, num_nb)
+                lms_pred_x, lms_pred_y, lms_pred_nb_x, lms_pred_nb_y, outputs_cls, max_cls = forward_pip(net, inputs, preprocess, cfg.input_size, cfg.net_stride, cfg.num_nb)
                 lms_pred = torch.cat((lms_pred_x, lms_pred_y), dim=1).flatten()
                 tmp_nb_x = lms_pred_nb_x[reverse_index1, reverse_index2].view(cfg.num_lms, max_len)
                 tmp_nb_y = lms_pred_nb_y[reverse_index1, reverse_index2].view(cfg.num_lms, max_len)
@@ -132,88 +135,15 @@ if task_name == task_list[0]:
                     x_pred = lms_pred_merge[i*2] * det_width
                     y_pred = lms_pred_merge[i*2+1] * det_height
                     cv2.circle(frame, (int(x_pred)+det_xmin, int(y_pred)+det_ymin), 1, (0, 0, 255), -1)
-                
-                SLEEPY_THRESHOLD = 0.5
-                SLEEPY_FRAME_THRESHOLD = 10
-                # Extract relevant features and classify user as sleepy or not
-                aspect_ratio = calculate_aspect_ratio(lms_pred_merge)
-                print("Aspect ratio: ", aspect_ratio)
-                if aspect_ratio < SLEEPY_THRESHOLD:
-                    sleepy_frames += 1
-                else:
-                    sleepy_frames = 0
-                
-                # If user is classified as sleepy for a certain number of frames, take action
-                if sleepy_frames >= SLEEPY_FRAME_THRESHOLD:
-                    # Play alarm or send notification
-                    print("User is sleepy!")
-                    exit()                    
-            #Return Annotation:
-            return frame
-        
-        def recv(self, frame):
-            print("")
-            frame_preprocess = frame.to_ndarray(format="bgr24")
-            print("start processing")
-            try:
-                frame_height, frame_width = frame_preprocess.shape[:2]
-                frame = frame_preprocess.copy()
-                sleepy_frames = 0
-                detector = FaceBoxesDetector('FaceBoxes', 'FaceBoxesV2/weights/FaceBoxesV2.pth', cfg.use_gpu, device)
-                my_thresh = 0.9
-                det_box_scale = 1.2
-                net.eval()
 
-
-                detections, _ = detector.detect(frame, my_thresh, 1)
-                for i in range (len(detections)):
-                    det_xmin = detections[i][2]
-                    det_ymin = detections[i][3]
-                    det_width = detections[i][4]
-                    det_height = detections[i][5]
-                    det_xmax = det_xmin + det_width - 1
-                    det_ymax = det_ymin + det_height - 1
-
-                    det_xmin -= int(det_width * (det_box_scale-1)/2)
-                    # remove a part of top area for alignment, see paper for details
-                    det_ymin += int(det_height * (det_box_scale-1)/2)
-                    det_xmax += int(det_width * (det_box_scale-1)/2)
-                    det_ymax += int(det_height * (det_box_scale-1)/2)
-                    det_xmin = max(det_xmin, 0)
-                    det_ymin = max(det_ymin, 0)
-                    det_xmax = min(det_xmax, frame_width-1)
-                    det_ymax = min(det_ymax, frame_height-1)
-                    det_width = det_xmax - det_xmin + 1
-                    det_height = det_ymax - det_ymin + 1
-                    cv2.rectangle(frame, (det_xmin, det_ymin), (det_xmax, det_ymax), (0, 0, 255), 2)
-                    det_crop = frame[det_ymin:det_ymax, det_xmin:det_xmax, :]
-                    det_crop = cv2.resize(det_crop, (cfg.input_size, cfg.input_size))
-                    inputs = Image.fromarray(det_crop[:,:,::-1].astype('uint8'), 'RGB')
-                    inputs = preprocess(inputs).unsqueeze(0)
-                    inputs = inputs.to(device)
-                    lms_pred_x, lms_pred_y, lms_pred_nb_x, lms_pred_nb_y, outputs_cls, max_cls = forward_pip(net, inputs, preprocess, cfg.input_size, cfg.net_stride, cfg.num_nb)
-                    lms_pred = torch.cat((lms_pred_x, lms_pred_y), dim=1).flatten()
-                    tmp_nb_x = lms_pred_nb_x[reverse_index1, reverse_index2].view(cfg.num_lms, max_len)
-                    tmp_nb_y = lms_pred_nb_y[reverse_index1, reverse_index2].view(cfg.num_lms, max_len)
-                    tmp_x = torch.mean(torch.cat((lms_pred_x, tmp_nb_x), dim=1), dim=1).view(-1,1)
-                    tmp_y = torch.mean(torch.cat((lms_pred_y, tmp_nb_y), dim=1), dim=1).view(-1,1)
-                    lms_pred_merge = torch.cat((tmp_x, tmp_y), dim=1).flatten()
-                    lms_pred = lms_pred.cpu().numpy()
-                    lms_pred_merge = lms_pred_merge.cpu().numpy()
-                    for i in range(cfg.num_lms):
-                        x_pred = lms_pred_merge[i*2] * det_width
-                        y_pred = lms_pred_merge[i*2+1] * det_height
-                        cv2.circle(frame, (int(x_pred)+det_xmin, int(y_pred)+det_ymin), 1, (0, 0, 255), -1)
-            except Exception as e:
-                print(e)
-            print("end processing")
+                print("end processing")
             return av.VideoFrame.from_image(frame, format="bgr24")
 
-    ctx = webrtc_streamer(
-            key="example",
-            video_processor_factory=VideoProcessor,
-            media_stream_constraints={
-                "video": True,
-                "audio": False
-            }
-        )
+    video_process = VideoProcessor()
+    webrtc_streamer(
+        key="example",
+        mode=WebRtcMode.SENDRECV,
+        video_processor_factory=video_process.recv(av.VideoFrame),
+        media_stream_constraints={"video": True, "audio": False},
+        async_processing=True,
+    )
