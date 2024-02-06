@@ -1,0 +1,339 @@
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r50_l2_l1_10_1_nb10
+INFO:root:data_name: WFLW
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 5
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet50
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 16
+INFO:root:save_interval: 5
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 1
+INFO:root:###########################################
+INFO:root:Epoch 0/4
+INFO:root:----------
+INFO:root:[Epoch 0/4, Batch 0/467] <Total loss: 2.989157> <map loss: 0.170749> <x loss: 0.513009> <y loss: 0.515103> <nbx loss: 1.211509> <nby loss: 0.578787>
+INFO:root:[Epoch 0/4, Batch 10/467] <Total loss: 1.546977> <map loss: 0.157473> <x loss: 0.281555> <y loss: 0.224810> <nbx loss: 0.538687> <nby loss: 0.344452>
+INFO:root:[Epoch 0/4, Batch 20/467] <Total loss: 1.242769> <map loss: 0.148078> <x loss: 0.244381> <y loss: 0.218707> <nbx loss: 0.348793> <nby loss: 0.282809>
+INFO:root:[Epoch 0/4, Batch 30/467] <Total loss: 1.132972> <map loss: 0.142474> <x loss: 0.224245> <y loss: 0.164287> <nbx loss: 0.327801> <nby loss: 0.274165>
+INFO:root:[Epoch 0/4, Batch 40/467] <Total loss: 1.064389> <map loss: 0.137964> <x loss: 0.195391> <y loss: 0.174357> <nbx loss: 0.270954> <nby loss: 0.285724>
+INFO:root:[Epoch 0/4, Batch 50/467] <Total loss: 0.930358> <map loss: 0.126223> <x loss: 0.184336> <y loss: 0.139847> <nbx loss: 0.270898> <nby loss: 0.209054>
+INFO:root:[Epoch 0/4, Batch 60/467] <Total loss: 0.785943> <map loss: 0.110002> <x loss: 0.138608> <y loss: 0.116434> <nbx loss: 0.202989> <nby loss: 0.217909>
+INFO:root:[Epoch 0/4, Batch 70/467] <Total loss: 0.709594> <map loss: 0.100418> <x loss: 0.125917> <y loss: 0.110970> <nbx loss: 0.178296> <nby loss: 0.193993>
+INFO:root:[Epoch 0/4, Batch 80/467] <Total loss: 0.586933> <map loss: 0.090578> <x loss: 0.109412> <y loss: 0.087591> <nbx loss: 0.176496> <nby loss: 0.122855>
+INFO:root:[Epoch 0/4, Batch 90/467] <Total loss: 0.655102> <map loss: 0.095768> <x loss: 0.128035> <y loss: 0.111169> <nbx loss: 0.163875> <nby loss: 0.156256>
+INFO:root:[Epoch 0/4, Batch 100/467] <Total loss: 0.539363> <map loss: 0.071746> <x loss: 0.110472> <y loss: 0.090748> <nbx loss: 0.142479> <nby loss: 0.123918>
+INFO:root:[Epoch 0/4, Batch 110/467] <Total loss: 0.580205> <map loss: 0.081853> <x loss: 0.131434> <y loss: 0.086897> <nbx loss: 0.158472> <nby loss: 0.121549>
+INFO:root:[Epoch 0/4, Batch 120/467] <Total loss: 0.497061> <map loss: 0.066384> <x loss: 0.110793> <y loss: 0.071920> <nbx loss: 0.146187> <nby loss: 0.101777>
+INFO:root:[Epoch 0/4, Batch 130/467] <Total loss: 0.576271> <map loss: 0.067996> <x loss: 0.122079> <y loss: 0.100639> <nbx loss: 0.153576> <nby loss: 0.131981>
+INFO:root:[Epoch 0/4, Batch 140/467] <Total loss: 0.511510> <map loss: 0.061631> <x loss: 0.101233> <y loss: 0.090731> <nbx loss: 0.129433> <nby loss: 0.128482>
+INFO:root:[Epoch 0/4, Batch 150/467] <Total loss: 0.568752> <map loss: 0.075274> <x loss: 0.120444> <y loss: 0.081212> <nbx loss: 0.173432> <nby loss: 0.118390>
+INFO:root:[Epoch 0/4, Batch 160/467] <Total loss: 0.483498> <map loss: 0.059214> <x loss: 0.097829> <y loss: 0.085659> <nbx loss: 0.130444> <nby loss: 0.110352>
+INFO:root:[Epoch 0/4, Batch 170/467] <Total loss: 0.523261> <map loss: 0.066090> <x loss: 0.097919> <y loss: 0.092966> <nbx loss: 0.136859> <nby loss: 0.129428>
+INFO:root:[Epoch 0/4, Batch 180/467] <Total loss: 0.500805> <map loss: 0.058894> <x loss: 0.110962> <y loss: 0.084292> <nbx loss: 0.141996> <nby loss: 0.104662>
+INFO:root:[Epoch 0/4, Batch 190/467] <Total loss: 0.484920> <map loss: 0.059777> <x loss: 0.098401> <y loss: 0.072478> <nbx loss: 0.137855> <nby loss: 0.116409>
+INFO:root:[Epoch 0/4, Batch 200/467] <Total loss: 0.521953> <map loss: 0.059310> <x loss: 0.110050> <y loss: 0.087805> <nbx loss: 0.140189> <nby loss: 0.124599>
+INFO:root:[Epoch 0/4, Batch 210/467] <Total loss: 0.564468> <map loss: 0.062789> <x loss: 0.121243> <y loss: 0.102845> <nbx loss: 0.140979> <nby loss: 0.136611>
+INFO:root:[Epoch 0/4, Batch 220/467] <Total loss: 0.483121> <map loss: 0.064075> <x loss: 0.096740> <y loss: 0.070730> <nbx loss: 0.138229> <nby loss: 0.113347>
+INFO:root:[Epoch 0/4, Batch 230/467] <Total loss: 0.481291> <map loss: 0.058189> <x loss: 0.118269> <y loss: 0.079536> <nbx loss: 0.136006> <nby loss: 0.089291>
+INFO:root:[Epoch 0/4, Batch 240/467] <Total loss: 0.451339> <map loss: 0.051364> <x loss: 0.098520> <y loss: 0.064946> <nbx loss: 0.138419> <nby loss: 0.098089>
+INFO:root:[Epoch 0/4, Batch 250/467] <Total loss: 0.423718> <map loss: 0.045412> <x loss: 0.092696> <y loss: 0.067595> <nbx loss: 0.111108> <nby loss: 0.106907>
+INFO:root:[Epoch 0/4, Batch 260/467] <Total loss: 0.437658> <map loss: 0.051698> <x loss: 0.096887> <y loss: 0.066451> <nbx loss: 0.129914> <nby loss: 0.092708>
+INFO:root:[Epoch 0/4, Batch 270/467] <Total loss: 0.428221> <map loss: 0.041577> <x loss: 0.093405> <y loss: 0.075643> <nbx loss: 0.128356> <nby loss: 0.089240>
+INFO:root:[Epoch 0/4, Batch 280/467] <Total loss: 0.470716> <map loss: 0.056791> <x loss: 0.113554> <y loss: 0.077424> <nbx loss: 0.122813> <nby loss: 0.100135>
+INFO:root:[Epoch 0/4, Batch 290/467] <Total loss: 0.550187> <map loss: 0.066934> <x loss: 0.119977> <y loss: 0.096315> <nbx loss: 0.160204> <nby loss: 0.106759>
+INFO:root:[Epoch 0/4, Batch 300/467] <Total loss: 0.489925> <map loss: 0.048801> <x loss: 0.085799> <y loss: 0.111088> <nbx loss: 0.118371> <nby loss: 0.125866>
+INFO:root:[Epoch 0/4, Batch 310/467] <Total loss: 0.439991> <map loss: 0.050258> <x loss: 0.078101> <y loss: 0.070579> <nbx loss: 0.136551> <nby loss: 0.104503>
+INFO:root:[Epoch 0/4, Batch 320/467] <Total loss: 0.425710> <map loss: 0.048335> <x loss: 0.090345> <y loss: 0.067078> <nbx loss: 0.118093> <nby loss: 0.101860>
+INFO:root:[Epoch 0/4, Batch 330/467] <Total loss: 0.488121> <map loss: 0.058521> <x loss: 0.109165> <y loss: 0.072888> <nbx loss: 0.135463> <nby loss: 0.112084>
+INFO:root:[Epoch 0/4, Batch 340/467] <Total loss: 0.433256> <map loss: 0.048807> <x loss: 0.107989> <y loss: 0.071034> <nbx loss: 0.113141> <nby loss: 0.092285>
+INFO:root:[Epoch 0/4, Batch 350/467] <Total loss: 0.458061> <map loss: 0.056469> <x loss: 0.106453> <y loss: 0.071656> <nbx loss: 0.128415> <nby loss: 0.095068>
+INFO:root:[Epoch 0/4, Batch 360/467] <Total loss: 0.446868> <map loss: 0.057079> <x loss: 0.097893> <y loss: 0.074842> <nbx loss: 0.115563> <nby loss: 0.101492>
+INFO:root:[Epoch 0/4, Batch 370/467] <Total loss: 0.515267> <map loss: 0.058661> <x loss: 0.113202> <y loss: 0.086727> <nbx loss: 0.144484> <nby loss: 0.112192>
+INFO:root:[Epoch 0/4, Batch 380/467] <Total loss: 0.439499> <map loss: 0.045073> <x loss: 0.093567> <y loss: 0.078606> <nbx loss: 0.117469> <nby loss: 0.104783>
+INFO:root:[Epoch 0/4, Batch 390/467] <Total loss: 0.408956> <map loss: 0.045294> <x loss: 0.100914> <y loss: 0.059845> <nbx loss: 0.116122> <nby loss: 0.086782>
+INFO:root:[Epoch 0/4, Batch 400/467] <Total loss: 0.435384> <map loss: 0.050101> <x loss: 0.097393> <y loss: 0.082340> <nbx loss: 0.113530> <nby loss: 0.092019>
+INFO:root:[Epoch 0/4, Batch 410/467] <Total loss: 0.460123> <map loss: 0.042887> <x loss: 0.104187> <y loss: 0.078580> <nbx loss: 0.130606> <nby loss: 0.103863>
+INFO:root:[Epoch 0/4, Batch 420/467] <Total loss: 0.383417> <map loss: 0.049417> <x loss: 0.087327> <y loss: 0.055641> <nbx loss: 0.107667> <nby loss: 0.083365>
+INFO:root:[Epoch 0/4, Batch 430/467] <Total loss: 0.461495> <map loss: 0.049541> <x loss: 0.094454> <y loss: 0.094177> <nbx loss: 0.113450> <nby loss: 0.109873>
+INFO:root:[Epoch 0/4, Batch 440/467] <Total loss: 0.394801> <map loss: 0.043269> <x loss: 0.097014> <y loss: 0.058546> <nbx loss: 0.122419> <nby loss: 0.073552>
+INFO:root:[Epoch 0/4, Batch 450/467] <Total loss: 0.455419> <map loss: 0.044947> <x loss: 0.105719> <y loss: 0.070871> <nbx loss: 0.129617> <nby loss: 0.104265>
+INFO:root:[Epoch 0/4, Batch 460/467] <Total loss: 0.420279> <map loss: 0.047117> <x loss: 0.093405> <y loss: 0.073861> <nbx loss: 0.114159> <nby loss: 0.091737>
+INFO:root:Epoch 1/4
+INFO:root:----------
+INFO:root:[Epoch 1/4, Batch 0/467] <Total loss: 0.360439> <map loss: 0.044653> <x loss: 0.083360> <y loss: 0.056188> <nbx loss: 0.095203> <nby loss: 0.081036>
+INFO:root:[Epoch 1/4, Batch 10/467] <Total loss: 0.441632> <map loss: 0.052428> <x loss: 0.090161> <y loss: 0.065458> <nbx loss: 0.133615> <nby loss: 0.099970>
+INFO:root:[Epoch 1/4, Batch 20/467] <Total loss: 0.403188> <map loss: 0.046675> <x loss: 0.094365> <y loss: 0.065479> <nbx loss: 0.119374> <nby loss: 0.077294>
+INFO:root:[Epoch 1/4, Batch 30/467] <Total loss: 0.446589> <map loss: 0.046530> <x loss: 0.095979> <y loss: 0.079222> <nbx loss: 0.128540> <nby loss: 0.096317>
+INFO:root:[Epoch 1/4, Batch 40/467] <Total loss: 0.408298> <map loss: 0.048029> <x loss: 0.083445> <y loss: 0.080554> <nbx loss: 0.098709> <nby loss: 0.097561>
+INFO:root:[Epoch 1/4, Batch 50/467] <Total loss: 0.428141> <map loss: 0.053630> <x loss: 0.079138> <y loss: 0.081691> <nbx loss: 0.106410> <nby loss: 0.107271>
+INFO:root:[Epoch 1/4, Batch 60/467] <Total loss: 0.382552> <map loss: 0.043565> <x loss: 0.081370> <y loss: 0.067356> <nbx loss: 0.108892> <nby loss: 0.081369>
+INFO:root:[Epoch 1/4, Batch 70/467] <Total loss: 0.345714> <map loss: 0.045302> <x loss: 0.075426> <y loss: 0.054511> <nbx loss: 0.099873> <nby loss: 0.070603>
+INFO:root:[Epoch 1/4, Batch 80/467] <Total loss: 0.470178> <map loss: 0.060077> <x loss: 0.095042> <y loss: 0.072449> <nbx loss: 0.138644> <nby loss: 0.103967>
+INFO:root:[Epoch 1/4, Batch 90/467] <Total loss: 0.437449> <map loss: 0.052506> <x loss: 0.097810> <y loss: 0.077127> <nbx loss: 0.114048> <nby loss: 0.095958>
+INFO:root:[Epoch 1/4, Batch 100/467] <Total loss: 0.410376> <map loss: 0.046209> <x loss: 0.096025> <y loss: 0.060902> <nbx loss: 0.116334> <nby loss: 0.090905>
+INFO:root:[Epoch 1/4, Batch 110/467] <Total loss: 0.379229> <map loss: 0.050536> <x loss: 0.084490> <y loss: 0.058789> <nbx loss: 0.111568> <nby loss: 0.073846>
+INFO:root:[Epoch 1/4, Batch 120/467] <Total loss: 0.417194> <map loss: 0.045021> <x loss: 0.099568> <y loss: 0.065570> <nbx loss: 0.122473> <nby loss: 0.084562>
+INFO:root:[Epoch 1/4, Batch 130/467] <Total loss: 0.400041> <map loss: 0.044083> <x loss: 0.100400> <y loss: 0.061538> <nbx loss: 0.119636> <nby loss: 0.074384>
+INFO:root:[Epoch 1/4, Batch 140/467] <Total loss: 0.431903> <map loss: 0.052487> <x loss: 0.095209> <y loss: 0.075603> <nbx loss: 0.113296> <nby loss: 0.095308>
+INFO:root:[Epoch 1/4, Batch 150/467] <Total loss: 0.340172> <map loss: 0.043274> <x loss: 0.069499> <y loss: 0.058953> <nbx loss: 0.093328> <nby loss: 0.075118>
+INFO:root:[Epoch 1/4, Batch 160/467] <Total loss: 0.373592> <map loss: 0.048098> <x loss: 0.082761> <y loss: 0.057257> <nbx loss: 0.101196> <nby loss: 0.084280>
+INFO:root:[Epoch 1/4, Batch 170/467] <Total loss: 0.393134> <map loss: 0.051994> <x loss: 0.087958> <y loss: 0.065349> <nbx loss: 0.110798> <nby loss: 0.077034>
+INFO:root:[Epoch 1/4, Batch 180/467] <Total loss: 0.344051> <map loss: 0.042774> <x loss: 0.076560> <y loss: 0.059586> <nbx loss: 0.098339> <nby loss: 0.066793>
+INFO:root:[Epoch 1/4, Batch 190/467] <Total loss: 0.358632> <map loss: 0.042079> <x loss: 0.080874> <y loss: 0.058647> <nbx loss: 0.103406> <nby loss: 0.073626>
+INFO:root:[Epoch 1/4, Batch 200/467] <Total loss: 0.376518> <map loss: 0.048122> <x loss: 0.085907> <y loss: 0.063221> <nbx loss: 0.110176> <nby loss: 0.069091>
+INFO:root:[Epoch 1/4, Batch 210/467] <Total loss: 0.362215> <map loss: 0.043019> <x loss: 0.095729> <y loss: 0.054261> <nbx loss: 0.105326> <nby loss: 0.063880>
+INFO:root:[Epoch 1/4, Batch 220/467] <Total loss: 0.394597> <map loss: 0.043917> <x loss: 0.097290> <y loss: 0.064507> <nbx loss: 0.107746> <nby loss: 0.081137>
+INFO:root:[Epoch 1/4, Batch 230/467] <Total loss: 0.362557> <map loss: 0.044303> <x loss: 0.087134> <y loss: 0.056516> <nbx loss: 0.107119> <nby loss: 0.067485>
+INFO:root:[Epoch 1/4, Batch 240/467] <Total loss: 0.399922> <map loss: 0.048813> <x loss: 0.086740> <y loss: 0.068723> <nbx loss: 0.110208> <nby loss: 0.085438>
+INFO:root:[Epoch 1/4, Batch 250/467] <Total loss: 0.364470> <map loss: 0.047483> <x loss: 0.078447> <y loss: 0.057543> <nbx loss: 0.094960> <nby loss: 0.086037>
+INFO:root:[Epoch 1/4, Batch 260/467] <Total loss: 0.398407> <map loss: 0.044195> <x loss: 0.092404> <y loss: 0.063013> <nbx loss: 0.120930> <nby loss: 0.077863>
+INFO:root:[Epoch 1/4, Batch 270/467] <Total loss: 0.366338> <map loss: 0.038851> <x loss: 0.088248> <y loss: 0.065602> <nbx loss: 0.096026> <nby loss: 0.077610>
+INFO:root:[Epoch 1/4, Batch 280/467] <Total loss: 0.352433> <map loss: 0.035524> <x loss: 0.077095> <y loss: 0.066176> <nbx loss: 0.091913> <nby loss: 0.081724>
+INFO:root:[Epoch 1/4, Batch 290/467] <Total loss: 0.368749> <map loss: 0.040110> <x loss: 0.090253> <y loss: 0.058610> <nbx loss: 0.108601> <nby loss: 0.071175>
+INFO:root:[Epoch 1/4, Batch 300/467] <Total loss: 0.401098> <map loss: 0.047009> <x loss: 0.089738> <y loss: 0.065823> <nbx loss: 0.109117> <nby loss: 0.089411>
+INFO:root:[Epoch 1/4, Batch 310/467] <Total loss: 0.339756> <map loss: 0.040728> <x loss: 0.069524> <y loss: 0.071179> <nbx loss: 0.077686> <nby loss: 0.080639>
+INFO:root:[Epoch 1/4, Batch 320/467] <Total loss: 0.422555> <map loss: 0.046588> <x loss: 0.097449> <y loss: 0.080059> <nbx loss: 0.103832> <nby loss: 0.094628>
+INFO:root:[Epoch 1/4, Batch 330/467] <Total loss: 0.366927> <map loss: 0.042065> <x loss: 0.084674> <y loss: 0.061109> <nbx loss: 0.098125> <nby loss: 0.080954>
+INFO:root:[Epoch 1/4, Batch 340/467] <Total loss: 0.331251> <map loss: 0.038426> <x loss: 0.079975> <y loss: 0.050315> <nbx loss: 0.100207> <nby loss: 0.062328>
+INFO:root:[Epoch 1/4, Batch 350/467] <Total loss: 0.438706> <map loss: 0.048335> <x loss: 0.085993> <y loss: 0.084946> <nbx loss: 0.104047> <nby loss: 0.115385>
+INFO:root:[Epoch 1/4, Batch 360/467] <Total loss: 0.426539> <map loss: 0.051986> <x loss: 0.096073> <y loss: 0.066922> <nbx loss: 0.114090> <nby loss: 0.097467>
+INFO:root:[Epoch 1/4, Batch 370/467] <Total loss: 0.385903> <map loss: 0.045970> <x loss: 0.087570> <y loss: 0.062464> <nbx loss: 0.111945> <nby loss: 0.077953>
+INFO:root:[Epoch 1/4, Batch 380/467] <Total loss: 0.437206> <map loss: 0.057630> <x loss: 0.088568> <y loss: 0.062373> <nbx loss: 0.131872> <nby loss: 0.096763>
+INFO:root:[Epoch 1/4, Batch 390/467] <Total loss: 0.339310> <map loss: 0.041641> <x loss: 0.078512> <y loss: 0.059779> <nbx loss: 0.087558> <nby loss: 0.071819>
+INFO:root:[Epoch 1/4, Batch 400/467] <Total loss: 0.379131> <map loss: 0.044166> <x loss: 0.090108> <y loss: 0.066291> <nbx loss: 0.104713> <nby loss: 0.073852>
+INFO:root:[Epoch 1/4, Batch 410/467] <Total loss: 0.335810> <map loss: 0.037821> <x loss: 0.077399> <y loss: 0.056031> <nbx loss: 0.093133> <nby loss: 0.071425>
+INFO:root:[Epoch 1/4, Batch 420/467] <Total loss: 0.360801> <map loss: 0.039713> <x loss: 0.085156> <y loss: 0.062947> <nbx loss: 0.100794> <nby loss: 0.072191>
+INFO:root:[Epoch 1/4, Batch 430/467] <Total loss: 0.398907> <map loss: 0.040397> <x loss: 0.094228> <y loss: 0.072312> <nbx loss: 0.102138> <nby loss: 0.089831>
+INFO:root:[Epoch 1/4, Batch 440/467] <Total loss: 0.406469> <map loss: 0.044239> <x loss: 0.089875> <y loss: 0.076870> <nbx loss: 0.109525> <nby loss: 0.085960>
+INFO:root:[Epoch 1/4, Batch 450/467] <Total loss: 0.330774> <map loss: 0.036002> <x loss: 0.080219> <y loss: 0.051317> <nbx loss: 0.098650> <nby loss: 0.064586>
+INFO:root:[Epoch 1/4, Batch 460/467] <Total loss: 0.326141> <map loss: 0.040680> <x loss: 0.074658> <y loss: 0.050914> <nbx loss: 0.096721> <nby loss: 0.063168>
+INFO:root:Epoch 2/4
+INFO:root:----------
+INFO:root:[Epoch 2/4, Batch 0/467] <Total loss: 0.386920> <map loss: 0.047636> <x loss: 0.078678> <y loss: 0.066726> <nbx loss: 0.108703> <nby loss: 0.085176>
+INFO:root:[Epoch 2/4, Batch 10/467] <Total loss: 0.365183> <map loss: 0.044631> <x loss: 0.094830> <y loss: 0.055991> <nbx loss: 0.100099> <nby loss: 0.069632>
+INFO:root:[Epoch 2/4, Batch 20/467] <Total loss: 0.353845> <map loss: 0.043319> <x loss: 0.081524> <y loss: 0.060779> <nbx loss: 0.098144> <nby loss: 0.070078>
+INFO:root:[Epoch 2/4, Batch 30/467] <Total loss: 0.337896> <map loss: 0.041332> <x loss: 0.081609> <y loss: 0.055254> <nbx loss: 0.096923> <nby loss: 0.062778>
+INFO:root:[Epoch 2/4, Batch 40/467] <Total loss: 0.342727> <map loss: 0.039431> <x loss: 0.086431> <y loss: 0.050818> <nbx loss: 0.103680> <nby loss: 0.062367>
+INFO:root:[Epoch 2/4, Batch 50/467] <Total loss: 0.417708> <map loss: 0.041117> <x loss: 0.095073> <y loss: 0.076621> <nbx loss: 0.109205> <nby loss: 0.095692>
+INFO:root:[Epoch 2/4, Batch 60/467] <Total loss: 0.369569> <map loss: 0.044714> <x loss: 0.086624> <y loss: 0.066627> <nbx loss: 0.099652> <nby loss: 0.071953>
+INFO:root:[Epoch 2/4, Batch 70/467] <Total loss: 0.350098> <map loss: 0.042612> <x loss: 0.082443> <y loss: 0.057189> <nbx loss: 0.096584> <nby loss: 0.071270>
+INFO:root:[Epoch 2/4, Batch 80/467] <Total loss: 0.596148> <map loss: 0.054489> <x loss: 0.150490> <y loss: 0.089928> <nbx loss: 0.182356> <nby loss: 0.118885>
+INFO:root:[Epoch 2/4, Batch 90/467] <Total loss: 0.457825> <map loss: 0.051228> <x loss: 0.106460> <y loss: 0.072882> <nbx loss: 0.123437> <nby loss: 0.103818>
+INFO:root:[Epoch 2/4, Batch 100/467] <Total loss: 0.288754> <map loss: 0.039534> <x loss: 0.068738> <y loss: 0.041566> <nbx loss: 0.081645> <nby loss: 0.057271>
+INFO:root:[Epoch 2/4, Batch 110/467] <Total loss: 0.374136> <map loss: 0.038606> <x loss: 0.089544> <y loss: 0.063207> <nbx loss: 0.107452> <nby loss: 0.075327>
+INFO:root:[Epoch 2/4, Batch 120/467] <Total loss: 0.332874> <map loss: 0.039267> <x loss: 0.076294> <y loss: 0.057754> <nbx loss: 0.089680> <nby loss: 0.069879>
+INFO:root:[Epoch 2/4, Batch 130/467] <Total loss: 0.330303> <map loss: 0.043362> <x loss: 0.076918> <y loss: 0.045998> <nbx loss: 0.097759> <nby loss: 0.066266>
+INFO:root:[Epoch 2/4, Batch 140/467] <Total loss: 0.389556> <map loss: 0.051924> <x loss: 0.085617> <y loss: 0.064719> <nbx loss: 0.107625> <nby loss: 0.079672>
+INFO:root:[Epoch 2/4, Batch 150/467] <Total loss: 0.405686> <map loss: 0.044691> <x loss: 0.094672> <y loss: 0.070076> <nbx loss: 0.106349> <nby loss: 0.089899>
+INFO:root:[Epoch 2/4, Batch 160/467] <Total loss: 0.411486> <map loss: 0.042909> <x loss: 0.084611> <y loss: 0.061923> <nbx loss: 0.113191> <nby loss: 0.108852>
+INFO:root:[Epoch 2/4, Batch 170/467] <Total loss: 0.342670> <map loss: 0.039455> <x loss: 0.084981> <y loss: 0.054935> <nbx loss: 0.094622> <nby loss: 0.068678>
+INFO:root:[Epoch 2/4, Batch 180/467] <Total loss: 0.335308> <map loss: 0.039738> <x loss: 0.078883> <y loss: 0.058959> <nbx loss: 0.091460> <nby loss: 0.066268>
+INFO:root:[Epoch 2/4, Batch 190/467] <Total loss: 0.388739> <map loss: 0.042257> <x loss: 0.098961> <y loss: 0.059863> <nbx loss: 0.112475> <nby loss: 0.075183>
+INFO:root:[Epoch 2/4, Batch 200/467] <Total loss: 0.319556> <map loss: 0.032331> <x loss: 0.079701> <y loss: 0.051560> <nbx loss: 0.093474> <nby loss: 0.062489>
+INFO:root:[Epoch 2/4, Batch 210/467] <Total loss: 0.337159> <map loss: 0.041842> <x loss: 0.082949> <y loss: 0.052698> <nbx loss: 0.090926> <nby loss: 0.068744>
+INFO:root:[Epoch 2/4, Batch 220/467] <Total loss: 0.386588> <map loss: 0.045227> <x loss: 0.094342> <y loss: 0.057970> <nbx loss: 0.114635> <nby loss: 0.074414>
+INFO:root:[Epoch 2/4, Batch 230/467] <Total loss: 0.308430> <map loss: 0.037900> <x loss: 0.072416> <y loss: 0.045774> <nbx loss: 0.084022> <nby loss: 0.068318>
+INFO:root:[Epoch 2/4, Batch 240/467] <Total loss: 0.388500> <map loss: 0.034514> <x loss: 0.091641> <y loss: 0.069886> <nbx loss: 0.106159> <nby loss: 0.086299>
+INFO:root:[Epoch 2/4, Batch 250/467] <Total loss: 0.360832> <map loss: 0.044810> <x loss: 0.087105> <y loss: 0.059657> <nbx loss: 0.098248> <nby loss: 0.071011>
+INFO:root:[Epoch 2/4, Batch 260/467] <Total loss: 0.377062> <map loss: 0.039921> <x loss: 0.089063> <y loss: 0.064647> <nbx loss: 0.108278> <nby loss: 0.075153>
+INFO:root:[Epoch 2/4, Batch 270/467] <Total loss: 0.363445> <map loss: 0.041982> <x loss: 0.083129> <y loss: 0.050071> <nbx loss: 0.123686> <nby loss: 0.064577>
+INFO:root:[Epoch 2/4, Batch 280/467] <Total loss: 0.337206> <map loss: 0.038232> <x loss: 0.083948> <y loss: 0.051808> <nbx loss: 0.103788> <nby loss: 0.059429>
+INFO:root:[Epoch 2/4, Batch 290/467] <Total loss: 0.318158> <map loss: 0.037470> <x loss: 0.074662> <y loss: 0.054723> <nbx loss: 0.087041> <nby loss: 0.064262>
+INFO:root:[Epoch 2/4, Batch 300/467] <Total loss: 0.412005> <map loss: 0.049029> <x loss: 0.094303> <y loss: 0.071193> <nbx loss: 0.109134> <nby loss: 0.088346>
+INFO:root:[Epoch 2/4, Batch 310/467] <Total loss: 0.298251> <map loss: 0.032555> <x loss: 0.075015> <y loss: 0.046622> <nbx loss: 0.083395> <nby loss: 0.060665>
+INFO:root:[Epoch 2/4, Batch 320/467] <Total loss: 0.327151> <map loss: 0.041227> <x loss: 0.075436> <y loss: 0.054621> <nbx loss: 0.088685> <nby loss: 0.067181>
+INFO:root:[Epoch 2/4, Batch 330/467] <Total loss: 0.437208> <map loss: 0.048773> <x loss: 0.088113> <y loss: 0.088368> <nbx loss: 0.108373> <nby loss: 0.103581>
+INFO:root:[Epoch 2/4, Batch 340/467] <Total loss: 0.328624> <map loss: 0.037395> <x loss: 0.083951> <y loss: 0.053146> <nbx loss: 0.097277> <nby loss: 0.056855>
+INFO:root:[Epoch 2/4, Batch 350/467] <Total loss: 0.363742> <map loss: 0.035541> <x loss: 0.088098> <y loss: 0.065320> <nbx loss: 0.097802> <nby loss: 0.076982>
+INFO:root:[Epoch 2/4, Batch 360/467] <Total loss: 0.310141> <map loss: 0.032362> <x loss: 0.074553> <y loss: 0.052065> <nbx loss: 0.083531> <nby loss: 0.067631>
+INFO:root:[Epoch 2/4, Batch 370/467] <Total loss: 0.319306> <map loss: 0.041486> <x loss: 0.075308> <y loss: 0.048753> <nbx loss: 0.093829> <nby loss: 0.059929>
+INFO:root:[Epoch 2/4, Batch 380/467] <Total loss: 0.317791> <map loss: 0.036129> <x loss: 0.078246> <y loss: 0.052337> <nbx loss: 0.092826> <nby loss: 0.058253>
+INFO:root:[Epoch 2/4, Batch 390/467] <Total loss: 0.377082> <map loss: 0.046039> <x loss: 0.086890> <y loss: 0.066683> <nbx loss: 0.093193> <nby loss: 0.084276>
+INFO:root:[Epoch 2/4, Batch 400/467] <Total loss: 0.370132> <map loss: 0.044723> <x loss: 0.083726> <y loss: 0.060325> <nbx loss: 0.102840> <nby loss: 0.078518>
+INFO:root:[Epoch 2/4, Batch 410/467] <Total loss: 0.309894> <map loss: 0.031641> <x loss: 0.072815> <y loss: 0.052980> <nbx loss: 0.081847> <nby loss: 0.070611>
+INFO:root:[Epoch 2/4, Batch 420/467] <Total loss: 0.309457> <map loss: 0.034485> <x loss: 0.076334> <y loss: 0.045235> <nbx loss: 0.087823> <nby loss: 0.065580>
+INFO:root:[Epoch 2/4, Batch 430/467] <Total loss: 0.302002> <map loss: 0.035568> <x loss: 0.072892> <y loss: 0.044403> <nbx loss: 0.091461> <nby loss: 0.057678>
+INFO:root:[Epoch 2/4, Batch 440/467] <Total loss: 0.324739> <map loss: 0.037204> <x loss: 0.083619> <y loss: 0.050105> <nbx loss: 0.095582> <nby loss: 0.058229>
+INFO:root:[Epoch 2/4, Batch 450/467] <Total loss: 0.326506> <map loss: 0.033674> <x loss: 0.070961> <y loss: 0.065612> <nbx loss: 0.084944> <nby loss: 0.071315>
+INFO:root:[Epoch 2/4, Batch 460/467] <Total loss: 0.359486> <map loss: 0.037341> <x loss: 0.082762> <y loss: 0.066416> <nbx loss: 0.096689> <nby loss: 0.076279>
+INFO:root:Epoch 3/4
+INFO:root:----------
+INFO:root:[Epoch 3/4, Batch 0/467] <Total loss: 0.312314> <map loss: 0.036053> <x loss: 0.070014> <y loss: 0.052676> <nbx loss: 0.091459> <nby loss: 0.062112>
+INFO:root:[Epoch 3/4, Batch 10/467] <Total loss: 0.366032> <map loss: 0.044948> <x loss: 0.091256> <y loss: 0.054441> <nbx loss: 0.106950> <nby loss: 0.068437>
+INFO:root:[Epoch 3/4, Batch 20/467] <Total loss: 0.340558> <map loss: 0.034584> <x loss: 0.083829> <y loss: 0.061086> <nbx loss: 0.096440> <nby loss: 0.064620>
+INFO:root:[Epoch 3/4, Batch 30/467] <Total loss: 0.313588> <map loss: 0.031892> <x loss: 0.083790> <y loss: 0.042575> <nbx loss: 0.102842> <nby loss: 0.052489>
+INFO:root:[Epoch 3/4, Batch 40/467] <Total loss: 0.288885> <map loss: 0.034923> <x loss: 0.073745> <y loss: 0.040106> <nbx loss: 0.091096> <nby loss: 0.049016>
+INFO:root:[Epoch 3/4, Batch 50/467] <Total loss: 0.366044> <map loss: 0.040053> <x loss: 0.088520> <y loss: 0.060357> <nbx loss: 0.099372> <nby loss: 0.077742>
+INFO:root:[Epoch 3/4, Batch 60/467] <Total loss: 0.390752> <map loss: 0.046714> <x loss: 0.092580> <y loss: 0.066599> <nbx loss: 0.100505> <nby loss: 0.084354>
+INFO:root:[Epoch 3/4, Batch 70/467] <Total loss: 0.322679> <map loss: 0.034753> <x loss: 0.075522> <y loss: 0.051779> <nbx loss: 0.097464> <nby loss: 0.063162>
+INFO:root:[Epoch 3/4, Batch 80/467] <Total loss: 0.333169> <map loss: 0.036439> <x loss: 0.071427> <y loss: 0.054892> <nbx loss: 0.100963> <nby loss: 0.069448>
+INFO:root:[Epoch 3/4, Batch 90/467] <Total loss: 0.293203> <map loss: 0.035147> <x loss: 0.061475> <y loss: 0.053601> <nbx loss: 0.077793> <nby loss: 0.065188>
+INFO:root:[Epoch 3/4, Batch 100/467] <Total loss: 0.332886> <map loss: 0.036869> <x loss: 0.079368> <y loss: 0.048731> <nbx loss: 0.104131> <nby loss: 0.063788>
+INFO:root:[Epoch 3/4, Batch 110/467] <Total loss: 0.362418> <map loss: 0.044033> <x loss: 0.088865> <y loss: 0.058359> <nbx loss: 0.101958> <nby loss: 0.069203>
+INFO:root:[Epoch 3/4, Batch 120/467] <Total loss: 0.341269> <map loss: 0.041260> <x loss: 0.080150> <y loss: 0.054776> <nbx loss: 0.088910> <nby loss: 0.076173>
+INFO:root:[Epoch 3/4, Batch 130/467] <Total loss: 0.389217> <map loss: 0.045825> <x loss: 0.090237> <y loss: 0.069293> <nbx loss: 0.105789> <nby loss: 0.078072>
+INFO:root:[Epoch 3/4, Batch 140/467] <Total loss: 0.297229> <map loss: 0.032981> <x loss: 0.063851> <y loss: 0.052023> <nbx loss: 0.077390> <nby loss: 0.070985>
+INFO:root:[Epoch 3/4, Batch 150/467] <Total loss: 0.370200> <map loss: 0.044069> <x loss: 0.085299> <y loss: 0.068279> <nbx loss: 0.093531> <nby loss: 0.079022>
+INFO:root:[Epoch 3/4, Batch 160/467] <Total loss: 0.348877> <map loss: 0.037256> <x loss: 0.096512> <y loss: 0.053333> <nbx loss: 0.097229> <nby loss: 0.064545>
+INFO:root:[Epoch 3/4, Batch 170/467] <Total loss: 0.360106> <map loss: 0.037325> <x loss: 0.074253> <y loss: 0.070522> <nbx loss: 0.092422> <nby loss: 0.085584>
+INFO:root:[Epoch 3/4, Batch 180/467] <Total loss: 0.343335> <map loss: 0.041967> <x loss: 0.082235> <y loss: 0.056759> <nbx loss: 0.089884> <nby loss: 0.072490>
+INFO:root:[Epoch 3/4, Batch 190/467] <Total loss: 0.370062> <map loss: 0.049482> <x loss: 0.082621> <y loss: 0.061292> <nbx loss: 0.101140> <nby loss: 0.075528>
+INFO:root:[Epoch 3/4, Batch 200/467] <Total loss: 0.296274> <map loss: 0.031170> <x loss: 0.076853> <y loss: 0.046546> <nbx loss: 0.080907> <nby loss: 0.060798>
+INFO:root:[Epoch 3/4, Batch 210/467] <Total loss: 0.450879> <map loss: 0.047235> <x loss: 0.102031> <y loss: 0.076761> <nbx loss: 0.127008> <nby loss: 0.097844>
+INFO:root:[Epoch 3/4, Batch 220/467] <Total loss: 0.291316> <map loss: 0.028585> <x loss: 0.072524> <y loss: 0.051741> <nbx loss: 0.081158> <nby loss: 0.057307>
+INFO:root:[Epoch 3/4, Batch 230/467] <Total loss: 0.340759> <map loss: 0.040747> <x loss: 0.079488> <y loss: 0.059327> <nbx loss: 0.093921> <nby loss: 0.067276>
+INFO:root:[Epoch 3/4, Batch 240/467] <Total loss: 0.370441> <map loss: 0.039074> <x loss: 0.085242> <y loss: 0.065406> <nbx loss: 0.108039> <nby loss: 0.072680>
+INFO:root:[Epoch 3/4, Batch 250/467] <Total loss: 0.350380> <map loss: 0.046659> <x loss: 0.085062> <y loss: 0.059650> <nbx loss: 0.097476> <nby loss: 0.061533>
+INFO:root:[Epoch 3/4, Batch 260/467] <Total loss: 0.432686> <map loss: 0.040348> <x loss: 0.092854> <y loss: 0.093518> <nbx loss: 0.102294> <nby loss: 0.103672>
+INFO:root:[Epoch 3/4, Batch 270/467] <Total loss: 0.282321> <map loss: 0.032628> <x loss: 0.071499> <y loss: 0.041510> <nbx loss: 0.086585> <nby loss: 0.050100>
+INFO:root:[Epoch 3/4, Batch 280/467] <Total loss: 0.388056> <map loss: 0.040183> <x loss: 0.086007> <y loss: 0.070461> <nbx loss: 0.106809> <nby loss: 0.084597>
+INFO:root:[Epoch 3/4, Batch 290/467] <Total loss: 0.318509> <map loss: 0.033312> <x loss: 0.072622> <y loss: 0.058796> <nbx loss: 0.088867> <nby loss: 0.064912>
+INFO:root:[Epoch 3/4, Batch 300/467] <Total loss: 0.314014> <map loss: 0.039186> <x loss: 0.074969> <y loss: 0.053229> <nbx loss: 0.082058> <nby loss: 0.064573>
+INFO:root:[Epoch 3/4, Batch 310/467] <Total loss: 0.372229> <map loss: 0.040765> <x loss: 0.090682> <y loss: 0.063646> <nbx loss: 0.100623> <nby loss: 0.076514>
+INFO:root:[Epoch 3/4, Batch 320/467] <Total loss: 0.368737> <map loss: 0.042817> <x loss: 0.081615> <y loss: 0.070963> <nbx loss: 0.095696> <nby loss: 0.077645>
+INFO:root:[Epoch 3/4, Batch 330/467] <Total loss: 0.345065> <map loss: 0.047149> <x loss: 0.073012> <y loss: 0.056736> <nbx loss: 0.097569> <nby loss: 0.070599>
+INFO:root:[Epoch 3/4, Batch 340/467] <Total loss: 0.303625> <map loss: 0.036976> <x loss: 0.074893> <y loss: 0.047492> <nbx loss: 0.083640> <nby loss: 0.060624>
+INFO:root:[Epoch 3/4, Batch 350/467] <Total loss: 0.375194> <map loss: 0.041668> <x loss: 0.079834> <y loss: 0.067400> <nbx loss: 0.100828> <nby loss: 0.085463>
+INFO:root:[Epoch 3/4, Batch 360/467] <Total loss: 0.374438> <map loss: 0.044222> <x loss: 0.091052> <y loss: 0.058781> <nbx loss: 0.102797> <nby loss: 0.077586>
+INFO:root:[Epoch 3/4, Batch 370/467] <Total loss: 0.335387> <map loss: 0.040426> <x loss: 0.074459> <y loss: 0.060242> <nbx loss: 0.090785> <nby loss: 0.069476>
+INFO:root:[Epoch 3/4, Batch 380/467] <Total loss: 0.327876> <map loss: 0.039751> <x loss: 0.082171> <y loss: 0.055433> <nbx loss: 0.089910> <nby loss: 0.060612>
+INFO:root:[Epoch 3/4, Batch 390/467] <Total loss: 0.316716> <map loss: 0.041482> <x loss: 0.075620> <y loss: 0.048203> <nbx loss: 0.088565> <nby loss: 0.062847>
+INFO:root:[Epoch 3/4, Batch 400/467] <Total loss: 0.384992> <map loss: 0.039702> <x loss: 0.094956> <y loss: 0.067470> <nbx loss: 0.105950> <nby loss: 0.076914>
+INFO:root:[Epoch 3/4, Batch 410/467] <Total loss: 0.361873> <map loss: 0.041686> <x loss: 0.076190> <y loss: 0.071343> <nbx loss: 0.090890> <nby loss: 0.081763>
+INFO:root:[Epoch 3/4, Batch 420/467] <Total loss: 0.339113> <map loss: 0.042312> <x loss: 0.077517> <y loss: 0.057840> <nbx loss: 0.087209> <nby loss: 0.074235>
+INFO:root:[Epoch 3/4, Batch 430/467] <Total loss: 0.313389> <map loss: 0.036912> <x loss: 0.077651> <y loss: 0.049828> <nbx loss: 0.084014> <nby loss: 0.064984>
+INFO:root:[Epoch 3/4, Batch 440/467] <Total loss: 0.341805> <map loss: 0.040153> <x loss: 0.082600> <y loss: 0.053103> <nbx loss: 0.102127> <nby loss: 0.063821>
+INFO:root:[Epoch 3/4, Batch 450/467] <Total loss: 0.348782> <map loss: 0.034137> <x loss: 0.087041> <y loss: 0.062989> <nbx loss: 0.093147> <nby loss: 0.071469>
+INFO:root:[Epoch 3/4, Batch 460/467] <Total loss: 0.285187> <map loss: 0.032727> <x loss: 0.074371> <y loss: 0.044509> <nbx loss: 0.080443> <nby loss: 0.053137>
+INFO:root:Epoch 4/4
+INFO:root:----------
+INFO:root:[Epoch 4/4, Batch 0/467] <Total loss: 0.316931> <map loss: 0.030281> <x loss: 0.070024> <y loss: 0.060698> <nbx loss: 0.080602> <nby loss: 0.075326>
+INFO:root:[Epoch 4/4, Batch 10/467] <Total loss: 0.361887> <map loss: 0.038227> <x loss: 0.089861> <y loss: 0.058821> <nbx loss: 0.099652> <nby loss: 0.075325>
+INFO:root:[Epoch 4/4, Batch 20/467] <Total loss: 0.366699> <map loss: 0.040557> <x loss: 0.086482> <y loss: 0.065608> <nbx loss: 0.097636> <nby loss: 0.076415>
+INFO:root:[Epoch 4/4, Batch 30/467] <Total loss: 0.353676> <map loss: 0.038198> <x loss: 0.079043> <y loss: 0.064334> <nbx loss: 0.100740> <nby loss: 0.071360>
+INFO:root:[Epoch 4/4, Batch 40/467] <Total loss: 0.332709> <map loss: 0.036307> <x loss: 0.081322> <y loss: 0.059725> <nbx loss: 0.085640> <nby loss: 0.069715>
+INFO:root:[Epoch 4/4, Batch 50/467] <Total loss: 0.345684> <map loss: 0.040635> <x loss: 0.074853> <y loss: 0.062096> <nbx loss: 0.094656> <nby loss: 0.073443>
+INFO:root:[Epoch 4/4, Batch 60/467] <Total loss: 0.343325> <map loss: 0.035119> <x loss: 0.076604> <y loss: 0.071420> <nbx loss: 0.089255> <nby loss: 0.070928>
+INFO:root:[Epoch 4/4, Batch 70/467] <Total loss: 0.358934> <map loss: 0.037349> <x loss: 0.085409> <y loss: 0.063199> <nbx loss: 0.095907> <nby loss: 0.077069>
+INFO:root:[Epoch 4/4, Batch 80/467] <Total loss: 0.389961> <map loss: 0.039188> <x loss: 0.091757> <y loss: 0.058486> <nbx loss: 0.119395> <nby loss: 0.081135>
+INFO:root:[Epoch 4/4, Batch 90/467] <Total loss: 0.374241> <map loss: 0.041101> <x loss: 0.084744> <y loss: 0.068203> <nbx loss: 0.099199> <nby loss: 0.080993>
+INFO:root:[Epoch 4/4, Batch 100/467] <Total loss: 0.357940> <map loss: 0.040514> <x loss: 0.080089> <y loss: 0.060594> <nbx loss: 0.099135> <nby loss: 0.077608>
+INFO:root:[Epoch 4/4, Batch 110/467] <Total loss: 0.346274> <map loss: 0.040991> <x loss: 0.079348> <y loss: 0.063205> <nbx loss: 0.092950> <nby loss: 0.069779>
+INFO:root:[Epoch 4/4, Batch 120/467] <Total loss: 0.288534> <map loss: 0.030353> <x loss: 0.070226> <y loss: 0.045689> <nbx loss: 0.085288> <nby loss: 0.056977>
+INFO:root:[Epoch 4/4, Batch 130/467] <Total loss: 0.323850> <map loss: 0.038752> <x loss: 0.081959> <y loss: 0.048943> <nbx loss: 0.094638> <nby loss: 0.059558>
+INFO:root:[Epoch 4/4, Batch 140/467] <Total loss: 0.327153> <map loss: 0.036267> <x loss: 0.075456> <y loss: 0.056019> <nbx loss: 0.092769> <nby loss: 0.066642>
+INFO:root:[Epoch 4/4, Batch 150/467] <Total loss: 0.300116> <map loss: 0.034225> <x loss: 0.072197> <y loss: 0.046051> <nbx loss: 0.091470> <nby loss: 0.056173>
+INFO:root:[Epoch 4/4, Batch 160/467] <Total loss: 0.389900> <map loss: 0.038948> <x loss: 0.091840> <y loss: 0.065109> <nbx loss: 0.121631> <nby loss: 0.072372>
+INFO:root:[Epoch 4/4, Batch 170/467] <Total loss: 0.308568> <map loss: 0.034448> <x loss: 0.066408> <y loss: 0.055719> <nbx loss: 0.086190> <nby loss: 0.065803>
+INFO:root:[Epoch 4/4, Batch 180/467] <Total loss: 0.302793> <map loss: 0.037755> <x loss: 0.072776> <y loss: 0.048606> <nbx loss: 0.086804> <nby loss: 0.056852>
+INFO:root:[Epoch 4/4, Batch 190/467] <Total loss: 0.312690> <map loss: 0.037952> <x loss: 0.076534> <y loss: 0.045131> <nbx loss: 0.097477> <nby loss: 0.055596>
+INFO:root:[Epoch 4/4, Batch 200/467] <Total loss: 0.319172> <map loss: 0.032048> <x loss: 0.084424> <y loss: 0.049591> <nbx loss: 0.090462> <nby loss: 0.062647>
+INFO:root:[Epoch 4/4, Batch 210/467] <Total loss: 0.404229> <map loss: 0.043326> <x loss: 0.089988> <y loss: 0.075782> <nbx loss: 0.104061> <nby loss: 0.091071>
+INFO:root:[Epoch 4/4, Batch 220/467] <Total loss: 0.349860> <map loss: 0.036270> <x loss: 0.074936> <y loss: 0.065105> <nbx loss: 0.092292> <nby loss: 0.081258>
+INFO:root:[Epoch 4/4, Batch 230/467] <Total loss: 0.314288> <map loss: 0.032377> <x loss: 0.075331> <y loss: 0.058340> <nbx loss: 0.085424> <nby loss: 0.062816>
+INFO:root:[Epoch 4/4, Batch 240/467] <Total loss: 0.342204> <map loss: 0.038637> <x loss: 0.081436> <y loss: 0.053591> <nbx loss: 0.106185> <nby loss: 0.062355>
+INFO:root:[Epoch 4/4, Batch 250/467] <Total loss: 0.313355> <map loss: 0.039872> <x loss: 0.078589> <y loss: 0.047818> <nbx loss: 0.090509> <nby loss: 0.056567>
+INFO:root:[Epoch 4/4, Batch 260/467] <Total loss: 0.320225> <map loss: 0.039591> <x loss: 0.080678> <y loss: 0.047245> <nbx loss: 0.096176> <nby loss: 0.056536>
+INFO:root:[Epoch 4/4, Batch 270/467] <Total loss: 0.350583> <map loss: 0.038647> <x loss: 0.081435> <y loss: 0.060411> <nbx loss: 0.096310> <nby loss: 0.073780>
+INFO:root:[Epoch 4/4, Batch 280/467] <Total loss: 0.349632> <map loss: 0.036706> <x loss: 0.082180> <y loss: 0.062644> <nbx loss: 0.098628> <nby loss: 0.069475>
+INFO:root:[Epoch 4/4, Batch 290/467] <Total loss: 0.296340> <map loss: 0.039816> <x loss: 0.068386> <y loss: 0.043661> <nbx loss: 0.086503> <nby loss: 0.057973>
+INFO:root:[Epoch 4/4, Batch 300/467] <Total loss: 0.324965> <map loss: 0.034780> <x loss: 0.066508> <y loss: 0.061184> <nbx loss: 0.087984> <nby loss: 0.074510>
+INFO:root:[Epoch 4/4, Batch 310/467] <Total loss: 0.379862> <map loss: 0.048920> <x loss: 0.090851> <y loss: 0.061061> <nbx loss: 0.107273> <nby loss: 0.071756>
+INFO:root:[Epoch 4/4, Batch 320/467] <Total loss: 0.326289> <map loss: 0.036266> <x loss: 0.073345> <y loss: 0.054052> <nbx loss: 0.098469> <nby loss: 0.064157>
+INFO:root:[Epoch 4/4, Batch 330/467] <Total loss: 0.350097> <map loss: 0.032846> <x loss: 0.076069> <y loss: 0.068900> <nbx loss: 0.097918> <nby loss: 0.074364>
+INFO:root:[Epoch 4/4, Batch 340/467] <Total loss: 0.379429> <map loss: 0.035329> <x loss: 0.090191> <y loss: 0.065546> <nbx loss: 0.110440> <nby loss: 0.077923>
+INFO:root:[Epoch 4/4, Batch 350/467] <Total loss: 0.351494> <map loss: 0.037348> <x loss: 0.072044> <y loss: 0.074149> <nbx loss: 0.082929> <nby loss: 0.085025>
+INFO:root:[Epoch 4/4, Batch 360/467] <Total loss: 0.400573> <map loss: 0.046025> <x loss: 0.088665> <y loss: 0.074277> <nbx loss: 0.105776> <nby loss: 0.085831>
+INFO:root:[Epoch 4/4, Batch 370/467] <Total loss: 0.325507> <map loss: 0.030457> <x loss: 0.074501> <y loss: 0.059029> <nbx loss: 0.090837> <nby loss: 0.070683>
+INFO:root:[Epoch 4/4, Batch 380/467] <Total loss: 0.322792> <map loss: 0.035229> <x loss: 0.082581> <y loss: 0.046281> <nbx loss: 0.101504> <nby loss: 0.057197>
+INFO:root:[Epoch 4/4, Batch 390/467] <Total loss: 0.357284> <map loss: 0.044440> <x loss: 0.085488> <y loss: 0.063392> <nbx loss: 0.092795> <nby loss: 0.071169>
+INFO:root:[Epoch 4/4, Batch 400/467] <Total loss: 0.380405> <map loss: 0.035772> <x loss: 0.094657> <y loss: 0.064505> <nbx loss: 0.103047> <nby loss: 0.082424>
+INFO:root:[Epoch 4/4, Batch 410/467] <Total loss: 0.291157> <map loss: 0.028779> <x loss: 0.069264> <y loss: 0.050837> <nbx loss: 0.086757> <nby loss: 0.055520>
+INFO:root:[Epoch 4/4, Batch 420/467] <Total loss: 0.344529> <map loss: 0.040356> <x loss: 0.078095> <y loss: 0.064659> <nbx loss: 0.087396> <nby loss: 0.074022>
+INFO:root:[Epoch 4/4, Batch 430/467] <Total loss: 0.344222> <map loss: 0.041309> <x loss: 0.082459> <y loss: 0.052985> <nbx loss: 0.100537> <nby loss: 0.066932>
+INFO:root:[Epoch 4/4, Batch 440/467] <Total loss: 0.253688> <map loss: 0.031041> <x loss: 0.060789> <y loss: 0.044142> <nbx loss: 0.069242> <nby loss: 0.048474>
+INFO:root:[Epoch 4/4, Batch 450/467] <Total loss: 0.361770> <map loss: 0.037505> <x loss: 0.082025> <y loss: 0.065739> <nbx loss: 0.100945> <nby loss: 0.075555>
+INFO:root:[Epoch 4/4, Batch 460/467] <Total loss: 0.366643> <map loss: 0.043701> <x loss: 0.090975> <y loss: 0.058805> <nbx loss: 0.106123> <nby loss: 0.067039>
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r50_l2_l1_10_1_nb10
+INFO:root:data_name: WFLW
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 5
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet50
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 16
+INFO:root:save_interval: 5
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 1
+INFO:root:###########################################
+INFO:root:Epoch 0/4
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r50_l2_l1_10_1_nb10
+INFO:root:data_name: WFLW
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 5
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet50
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 16
+INFO:root:save_interval: 5
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 1
+INFO:root:###########################################
+INFO:root:Epoch 0/4
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r50_l2_l1_10_1_nb10
+INFO:root:data_name: WFLW
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 5
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet50
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 16
+INFO:root:save_interval: 5
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 1
+INFO:root:###########################################
+INFO:root:Epoch 0/4
+INFO:root:----------

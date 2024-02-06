@@ -1,0 +1,82 @@
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r50_l2_l1_10_1_nb10
+INFO:root:data_name: LaPa
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 60
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet50
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 16
+INFO:root:save_interval: 60
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 1
+INFO:root:###########################################
+INFO:root:Epoch 0/59
+INFO:root:----------
+INFO:root:[Epoch 0/59, Batch 0/1259] <Total loss: 3.211199> <map loss: 0.170533> <x loss: 0.519421> <y loss: 0.532091> <nbx loss: 1.383697> <nby loss: 0.605457>
+INFO:root:[Epoch 0/59, Batch 10/1259] <Total loss: 1.894060> <map loss: 0.159141> <x loss: 0.258754> <y loss: 0.239372> <nbx loss: 0.841465> <nby loss: 0.395328>
+INFO:root:[Epoch 0/59, Batch 20/1259] <Total loss: 1.726939> <map loss: 0.152831> <x loss: 0.250154> <y loss: 0.187544> <nbx loss: 0.675150> <nby loss: 0.461261>
+INFO:root:[Epoch 0/59, Batch 30/1259] <Total loss: 1.546350> <map loss: 0.140585> <x loss: 0.234206> <y loss: 0.195015> <nbx loss: 0.638002> <nby loss: 0.338543>
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r50_l2_l1_10_1_nb10
+INFO:root:data_name: LaPa
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 60
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet50
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 16
+INFO:root:save_interval: 60
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/59
+INFO:root:----------
+INFO:root:[Epoch 0/59, Batch 0/1259] <Total loss: 3.420632> <map loss: 0.165834> <x loss: 0.542183> <y loss: 0.551506> <nbx loss: 1.485009> <nby loss: 0.676100>
+INFO:root:[Epoch 0/59, Batch 10/1259] <Total loss: 1.944409> <map loss: 0.155693> <x loss: 0.267933> <y loss: 0.224281> <nbx loss: 0.880189> <nby loss: 0.416314>
+INFO:root:[Epoch 0/59, Batch 20/1259] <Total loss: 1.596650> <map loss: 0.146276> <x loss: 0.251341> <y loss: 0.189666> <nbx loss: 0.668928> <nby loss: 0.340440>
+INFO:root:[Epoch 0/59, Batch 30/1259] <Total loss: 1.453791> <map loss: 0.136967> <x loss: 0.228263> <y loss: 0.153095> <nbx loss: 0.645709> <nby loss: 0.289756>
+INFO:root:[Epoch 0/59, Batch 40/1259] <Total loss: 1.274520> <map loss: 0.126910> <x loss: 0.179096> <y loss: 0.140226> <nbx loss: 0.571356> <nby loss: 0.256932>
+INFO:root:[Epoch 0/59, Batch 50/1259] <Total loss: 1.191417> <map loss: 0.107151> <x loss: 0.164557> <y loss: 0.131770> <nbx loss: 0.501994> <nby loss: 0.285946>
+INFO:root:[Epoch 0/59, Batch 60/1259] <Total loss: 0.966370> <map loss: 0.103345> <x loss: 0.155371> <y loss: 0.116802> <nbx loss: 0.378213> <nby loss: 0.212639>
+INFO:root:[Epoch 0/59, Batch 70/1259] <Total loss: 0.909720> <map loss: 0.096725> <x loss: 0.153659> <y loss: 0.105698> <nbx loss: 0.348901> <nby loss: 0.204736>
+INFO:root:[Epoch 0/59, Batch 80/1259] <Total loss: 0.984094> <map loss: 0.090102> <x loss: 0.157171> <y loss: 0.121349> <nbx loss: 0.350275> <nby loss: 0.265197>
+INFO:root:[Epoch 0/59, Batch 90/1259] <Total loss: 0.851165> <map loss: 0.085533> <x loss: 0.146221> <y loss: 0.093851> <nbx loss: 0.316792> <nby loss: 0.208768>
+INFO:root:[Epoch 0/59, Batch 100/1259] <Total loss: 0.773845> <map loss: 0.080883> <x loss: 0.141673> <y loss: 0.086576> <nbx loss: 0.309915> <nby loss: 0.154800>
+INFO:root:[Epoch 0/59, Batch 110/1259] <Total loss: 0.765031> <map loss: 0.071205> <x loss: 0.131300> <y loss: 0.091855> <nbx loss: 0.293772> <nby loss: 0.176900>
+INFO:root:[Epoch 0/59, Batch 120/1259] <Total loss: 0.810929> <map loss: 0.077837> <x loss: 0.131586> <y loss: 0.088295> <nbx loss: 0.309796> <nby loss: 0.203415>
+INFO:root:[Epoch 0/59, Batch 130/1259] <Total loss: 0.743473> <map loss: 0.069931> <x loss: 0.145589> <y loss: 0.085845> <nbx loss: 0.305674> <nby loss: 0.136434>
+INFO:root:[Epoch 0/59, Batch 140/1259] <Total loss: 0.710492> <map loss: 0.064768> <x loss: 0.133485> <y loss: 0.093932> <nbx loss: 0.282528> <nby loss: 0.135779>
+INFO:root:[Epoch 0/59, Batch 150/1259] <Total loss: 0.702038> <map loss: 0.064670> <x loss: 0.125128> <y loss: 0.086596> <nbx loss: 0.279297> <nby loss: 0.146347>
+INFO:root:[Epoch 0/59, Batch 160/1259] <Total loss: 0.677544> <map loss: 0.067361> <x loss: 0.129787> <y loss: 0.076109> <nbx loss: 0.268697> <nby loss: 0.135590>
+INFO:root:[Epoch 0/59, Batch 170/1259] <Total loss: 0.668123> <map loss: 0.064777> <x loss: 0.136844> <y loss: 0.079056> <nbx loss: 0.269745> <nby loss: 0.117701>
+INFO:root:[Epoch 0/59, Batch 180/1259] <Total loss: 0.688640> <map loss: 0.065681> <x loss: 0.132504> <y loss: 0.079540> <nbx loss: 0.272717> <nby loss: 0.138198>
+INFO:root:[Epoch 0/59, Batch 190/1259] <Total loss: 0.702066> <map loss: 0.075437> <x loss: 0.124501> <y loss: 0.090913> <nbx loss: 0.271007> <nby loss: 0.140209>
+INFO:root:[Epoch 0/59, Batch 200/1259] <Total loss: 0.692592> <map loss: 0.067447> <x loss: 0.123842> <y loss: 0.094914> <nbx loss: 0.262878> <nby loss: 0.143511>
+INFO:root:[Epoch 0/59, Batch 210/1259] <Total loss: 0.699426> <map loss: 0.064054> <x loss: 0.134089> <y loss: 0.081308> <nbx loss: 0.272843> <nby loss: 0.147132>
+INFO:root:[Epoch 0/59, Batch 220/1259] <Total loss: 0.634630> <map loss: 0.062829> <x loss: 0.126790> <y loss: 0.071868> <nbx loss: 0.267301> <nby loss: 0.105843>
+INFO:root:[Epoch 0/59, Batch 230/1259] <Total loss: 0.677968> <map loss: 0.066509> <x loss: 0.110436> <y loss: 0.089901> <nbx loss: 0.273876> <nby loss: 0.137247>
+INFO:root:[Epoch 0/59, Batch 240/1259] <Total loss: 0.698773> <map loss: 0.073891> <x loss: 0.132453> <y loss: 0.077481> <nbx loss: 0.268988> <nby loss: 0.145960>
+INFO:root:[Epoch 0/59, Batch 250/1259] <Total loss: 0.632043> <map loss: 0.065445> <x loss: 0.116150> <y loss: 0.077823> <nbx loss: 0.246564> <nby loss: 0.126060>
+INFO:root:[Epoch 0/59, Batch 260/1259] <Total loss: 0.684707> <map loss: 0.065700> <x loss: 0.123957> <y loss: 0.082073> <nbx loss: 0.259456> <nby loss: 0.153521>
+INFO:root:[Epoch 0/59, Batch 270/1259] <Total loss: 0.627722> <map loss: 0.059994> <x loss: 0.126269> <y loss: 0.069597> <nbx loss: 0.256542> <nby loss: 0.115320>
+INFO:root:[Epoch 0/59, Batch 280/1259] <Total loss: 0.625597> <map loss: 0.060529> <x loss: 0.115706> <y loss: 0.083276> <nbx loss: 0.241482> <nby loss: 0.124604>
+INFO:root:[Epoch 0/59, Batch 290/1259] <Total loss: 0.655504> <map loss: 0.065087> <x loss: 0.129460> <y loss: 0.082641> <nbx loss: 0.251853> <nby loss: 0.126462>

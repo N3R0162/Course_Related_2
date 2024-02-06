@@ -1,0 +1,1110 @@
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: 106_points
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 50
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 112
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 106
+INFO:root:save_interval: 50
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/49
+INFO:root:----------

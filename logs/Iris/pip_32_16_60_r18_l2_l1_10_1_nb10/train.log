@@ -1,0 +1,465 @@
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 10
+INFO:root:save_interval: 30
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 10
+INFO:root:save_interval: 30
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 10
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 1
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 4
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 6
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 3
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 3
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/29
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 3
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/29
+INFO:root:----------
+INFO:root:[Epoch 0/29, Batch 0/725] <Total loss: 2.632309> <map loss: 0.160466> <x loss: 0.524608> <y loss: 0.480918> <nbx loss: 0.758229> <nby loss: 0.708089>
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 3
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/29
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 3
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/29
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 3
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/29
+INFO:root:----------
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 3
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/29
+INFO:root:----------
+INFO:root:[Epoch 0/29, Batch 0/725] <Total loss: 2.598038> <map loss: 0.168510> <x loss: 0.456676> <y loss: 0.543081> <nbx loss: 0.659495> <nby loss: 0.770276>
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 3
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/29
+INFO:root:----------
+INFO:root:[Epoch 0/29, Batch 0/725] <Total loss: 2.616589> <map loss: 0.175913> <x loss: 0.511349> <y loss: 0.466029> <nbx loss: 0.738251> <nby loss: 0.725046>
+INFO:root:###########################################
+INFO:root:experiment_name: pip_32_16_60_r18_l2_l1_10_1_nb10
+INFO:root:data_name: Iris
+INFO:root:det_head: pip
+INFO:root:net_stride: 32
+INFO:root:batch_size: 16
+INFO:root:init_lr: 0.0001
+INFO:root:num_epochs: 30
+INFO:root:decay_steps: [30, 50]
+INFO:root:input_size: 256
+INFO:root:backbone: resnet18
+INFO:root:pretrained: True
+INFO:root:criterion_cls: l2
+INFO:root:criterion_reg: l1
+INFO:root:cls_loss_weight: 10
+INFO:root:reg_loss_weight: 1
+INFO:root:num_lms: 5
+INFO:root:save_interval: 30
+INFO:root:num_nb: 3
+INFO:root:use_gpu: True
+INFO:root:gpu_id: 0
+INFO:root:###########################################
+INFO:root:Epoch 0/29
+INFO:root:----------
+INFO:root:[Epoch 0/29, Batch 0/671] <Total loss: 2.478003> <map loss: 0.166081> <x loss: 0.461194> <y loss: 0.488789> <nbx loss: 0.665775> <nby loss: 0.696164>
+INFO:root:nme: inf
+INFO:root:fr : 1.0
+INFO:root:auc: 0.0
+INFO:root:nme: 1.3528603893716697
+INFO:root:fr : 1.0
+INFO:root:auc: 0.0
+INFO:root:nme: 2.036167436767191
+INFO:root:fr : 1.0
+INFO:root:auc: 0.0
+INFO:root:nme: 1.1528196612795716
+INFO:root:fr : 1.0
+INFO:root:auc: 0.0
+INFO:root:nme: 1.9064584177353843
+INFO:root:fr : 1.0
+INFO:root:auc: 0.0
+INFO:root:nme: 1.9064584177353843
+INFO:root:fr : 1.0
+INFO:root:auc: 0.0
+INFO:root:nme: 0.34919083111664884
+INFO:root:fr : 0.9973363774733638
+INFO:root:auc: 0.0003169710806697108
+INFO:root:nme: 0.3573497396864601
+INFO:root:fr : 1.0
+INFO:root:auc: 0.0
+INFO:root:nme: 0.3177738426407797
+INFO:root:fr : 1.0
+INFO:root:auc: 0.0
