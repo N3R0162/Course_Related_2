@@ -91,6 +91,7 @@ def demo_image(image_path, net, preprocess, input_size, net_stride, num_nb, use_
         image_groundtrust = image.copy()
         image_height, image_width, _ = image.shape
         detections, _ = detector.detect(image, my_thresh, 1)
+        print("Start detecting")
         for i in range(len(detections)):
             det_xmin = detections[i][2]
             det_ymin = detections[i][3]
@@ -108,7 +109,7 @@ def demo_image(image_path, net, preprocess, input_size, net_stride, num_nb, use_
             det_ymin = max(det_ymin, 0)
             det_xmax = min(det_xmax, image_width-1)
             det_ymax = min(det_ymax, image_height-1)
-            det_width = det_xmax - det_xmin + 1
+            det_width = det_xmax - det_xmin + 1 
             det_height = det_ymax - det_ymin + 1
             cv2.rectangle(image, (det_xmin, det_ymin), (det_xmax, det_ymax), (0, 0, 255), 2)
             det_crop = image[det_ymin:det_ymax, det_xmin:det_xmax, :]

@@ -27,8 +27,8 @@ from networks import *
 import data_utils
 from functions import *
 
-os.environ['TWILIO_ACCOUNT_SID'] = 'AC38b506e97c51e0bc3de0a030f12cf2d4'
-os.environ['TWILIO_AUTH_TOKEN'] = '1c58c61779cb60f16861f5e3d090abcb'    
+# os.environ['TWILIO_ACCOUNT_SID'] = 'AC38b506e97c51e0bc3de0a030f12cf2d4'
+# os.environ['TWILIO_AUTH_TOKEN'] = '1c58c61779cb60f16861f5e3d090abcb'    
 
 #Init model variables:
 experiment_name = "pip_32_16_60_r18_l2_l1_10_1_nb10"
@@ -86,6 +86,9 @@ with st.sidebar:
     task_name = st.selectbox("Choose a task", task_list)
 st.title(task_name)    
 
+import queue
+from queue import Queue
+result_queue = Queue()
 
 # Define a callback function to process each frame
 def callback(frame: av.VideoFrame) -> av.VideoFrame:
@@ -139,23 +142,41 @@ def callback(frame: av.VideoFrame) -> av.VideoFrame:
         lms_pred_merge = torch.cat((tmp_x, tmp_y), dim=1).flatten()
         lms_pred = lms_pred.cpu().numpy()
         lms_pred_merge = lms_pred_merge.cpu().numpy()
+
+        # Extract relevant features and classify user as sleepy or not
+
         for i in range(16):
             x_pred = lms_pred_merge[i*2] * det_width
             y_pred = lms_pred_merge[i*2+1] * det_height
             cv2.circle(img, (int(x_pred)+det_xmin, int(y_pred)+det_ymin), 1, (0, 0, 255), -1)
-
-
+        aspect_ratio = calculate_aspect_ratio(lms_pred_merge)
+        result_queue.put(aspect_ratio)
+        
     # Return the processed frame
     return av.VideoFrame.from_ndarray(img, format="bgr24")
 
+def display_aspect_ratio():
+    while True:
+        try:
+            aspect_ratio = result_queue.get()
+            st.write(f"Aspect ratio: {aspect_ratio}")
+        except queue.Empty:
+            print("Queue is empty")
+            exit()
+
 
 # Set up the Streamlit WebRTC connection
-webrtc_ctx = webrtc_streamer(
-    key="PIPNet",
-    mode=WebRtcMode.SENDRECV,
-    video_frame_callback=callback,
-    media_stream_constraints={"video": True, "audio": False},
-    async_processing=True,
-)
-# Optionally, you can add some explanatory text or markdown below the WebRTC streamer
-st.markdown("Your explanatory text or markdown here.")
+if __name__ == "__main__":
+    # ... setup code ...
+    # Set up the Streamlit WebRTC connection
+    webrtc_ctx = webrtc_streamer(
+        key="PIPNet",
+        mode=WebRtcMode.SENDRECV,
+        video_frame_callback=callback,
+        media_stream_constraints={"video": True, "audio": False},
+        async_processing=False,
+    )
+    if webrtc_ctx.video_processor:
+        display_thread = threading.Thread(target=display_aspect_ratio)
+        display_thread.start()
+

@@ -310,3 +310,5 @@ def get_ice_servers():
         return [{"urls": ["stun:stun.l.google.com:19302"]}]
 
     return token.ice_servers
+
+def get_perclos(frame):
