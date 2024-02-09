@@ -3,6 +3,7 @@ import streamlit as st
 import cv2, os
 import numpy as np
 import importlib
+import time
 from math import floor
 import pandas as pd
 import sys
@@ -23,7 +24,7 @@ import torchvision.models as models
 from networks import *
 import data_utils
 from functions import *
-
+from attention_score import AttentionScorer
 #Init model variables:
 experiment_name = "pip_32_16_60_r18_l2_l1_10_1_nb10"
 data_name = "WFLW"
@@ -37,7 +38,8 @@ cfg = Config()
 cfg.experiment_name = experiment_name
 cfg.data_name = data_name
 meanface_indices, reverse_index1, reverse_index2, max_len = get_meanface(os.path.join('data', cfg.data_name, 'meanface.txt'), cfg.num_nb)
-
+print("====================================")
+print("Loading the model")
 resnet18 = models.resnet18(pretrained=cfg.pretrained)
 net = Pip_resnet18(resnet18, cfg.num_nb, num_lms=cfg.num_lms, input_size=cfg.input_size, net_stride=cfg.net_stride)
 # Set device (CPU/GPU)
@@ -46,11 +48,14 @@ if cfg.use_gpu:
 else:
     device = torch.device("cpu")
 net = net.to(device)
+print("Model loaded")
 
 # Load the state dictionary
 weight_file = os.path.join(save_dir, 'epoch%d.pth' % (cfg.num_epochs-1))
 state_dict = torch.load(weight_file, map_location=device)
 net.load_state_dict(state_dict)
+print("State dictionary loaded")
+print("====================================")
 
 normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                  std=[0.229, 0.224, 0.225])
@@ -58,29 +63,16 @@ preprocess = transforms.Compose([transforms.Resize((cfg.input_size, cfg.input_si
 
 
 
-
+print("Starting the video")
 def play_webcam():
-    """
-    Plays a webcam stream. Detects Objects in real-time using the YOLOv8 object detection model.
-
-    Parameters:
-        conf: Confidence of YOLOv8 model.
-        model: An instance of the `YOLOv8` class containing the YOLOv8 model.
-
-    Returns:
-        None
-
-    Raises:
-        None
-    """
-    # Create an empty list to store aspect ratio values
-    aspect_ratios = []
 
     # Display the DataFrame using st.table()
     label_holder = st.empty()
     df = pd.DataFrame(columns=["Aspect Ratio"])
     label_holder.table(df)
-    source_webcam = "/dev/video0"
+    #Jetson Nano CSI Camera
+    pipeline = 'nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720, format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink'
+
     if st.sidebar.button('Test_PIPNet'):
         try:
             detector = FaceBoxesDetector('FaceBoxes', 'FaceBoxesV2/weights/FaceBoxesV2.pth', True, torch.device("cuda:0"))
@@ -89,13 +81,28 @@ def play_webcam():
             net.eval()
             count = 0
             sleepy_frames = 0
-            cap = cv2.VideoCapture(source_webcam)
+            print("Starting the video")
+            #Jetson Nano CSI Camera
+            cap = cv2.VideoCapture(pipeline, cv2.CAP_GSTREAMER)
+
+            print("Video loaded")
+            print("====================================")
             frame_width = int(cap.get(3))
             frame_height = int(cap.get(4))
             st_frame = st.empty()
+            #Set up parameters for the video
+            t_0 = time.perf_counter()
+            score = AttentionScorer(t_now=t_0, ear_thresh=0.1, gaze_thresh=0.2, perclos_thresh=0.2, roll_thresh=15, pitch_thresh=15, yaw_thresh=15, ear_time_thresh=0.2, gaze_time_thresh=0.2, pose_time_thresh=4.0, verbose=False)
+            i = 0 
+            time.sleep(0.01)
+            print("Starting the processing loop")
             while (cap.isOpened()):
+                t_now = time.perf_counter()
+                fps = i/(t_now-t_0)
+                if fps == 0:
+                    fps = 10
                 ret, frame = cap.read()
-                if ret == True:
+                if ret == True:        
                     detections, _ = detector.detect(frame, my_thresh, 1)
                     for i in range(len(detections)):
                         det_xmin = detections[i][2]
@@ -135,18 +142,27 @@ def play_webcam():
                             y_pred = lms_pred_merge[i*2+1] * det_height
                             cv2.circle(frame, (int(x_pred)+det_xmin, int(y_pred)+det_ymin), 1, (0, 0, 255), -1)
                         st_frame.image(image=frame, caption="Detected Video", channels="BGR", use_column_width=True)
-                        # Extract relevant features and classify user as sleepy or not
-                        aspect_ratio = calculate_aspect_ratio(lms_pred_merge)
-                        
+                        average_aspect_ratio, left_aspect_ratio, right_aspect_ratio = calculate_aspect_ratio(lms_pred_merge)
+                        tired, perclos_score = score.get_PERCLOS(t_now, fps, average_aspect_ratio)
+
                         # Format aspect ratio value
-                        aspect_ratio_str = f"Aspect Ratio: {aspect_ratio}"
+                        aspect_ratio_str = f"{average_aspect_ratio}"
                         
+                        # Format PERCLOS score value
+                        perclos_score_str = f"{perclos_score:.2f}"
+
+                        # Format tired value
+                        tired_str = f"{tired}"
+
+                                        
                         # Update the displayed DataFrame
-                        df = pd.DataFrame({"Aspect Ratio": [aspect_ratio_str]})
+                        df = pd.DataFrame({"Aspect Ratio": [aspect_ratio_str], "PERCLOS Score": [perclos_score_str], "Tired": [tired_str]})
+
                         label_holder.table(df)
                 else:
                     cap.release()
-                    print("Error")
+
+                    print("Error", ret)
                     continue
         except Exception as e:
             print("Error loading video: " + str(e))

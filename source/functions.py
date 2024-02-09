@@ -16,22 +16,22 @@ import streamlit as st
 def buddha_blessing():
     print("""
                         _oo0oo_
-                       o8888888o
+                       o8888888o  
                        88" . "88
                        (| -_- |)
                        0\  =  /0
-                     ___/`---'\\___
-                   .' \\\\|     |// '.
-                  / \\\\|||  :  |||// \\
+                     ___/`---'\___
+                   .' \\|     |//  '.
+                  / \\|||  :  |||// \\
                  / _||||| -:- |||||- \\
-                |   | \\\\\\  -  /// |   |
-                | \\_|  ''\\---/''  |_/ |
-                \\  .-\\__  '-'  ___/-. /
-              ___'. .'  /--.--\\  `. .'___
-           ."" '<  `.___\\_<|>_/___.' >' "".
-          | | :  `- \`.;`\\ _ /`;.`/ - ` : | |
-          \\  \\ `_.   \\_ __\\ /__ _/   .-` /  /
-      =====`-.____`.___ \\_____/___.-`___.-'=====
+                |   | \\\  -  /// |   |
+                | \_|  ''\---/''  |_/ |
+                \ .-\\__  '-'  ___/-. /
+              ___'. .'  /--.--\  `. .'___
+           .""   '<`.___\_<|>_/___.' >'  "".
+          | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+          \\  \\ `_. \_ __\ /__ _/   .-` /  /
+      =====`-.____`.___ \_____/___.-`___.-'=====
                         `=---='
 
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -279,36 +279,15 @@ def calculate_aspect_ratio(lms_pred):
     right_eye_aspect_ratio = (right_height_1 + right_height_2 + right_height_3) / (3 * right_width)
 
     average_aspect_ratio = (left_eye_aspect_ratio + right_eye_aspect_ratio) / 2
-    return average_aspect_ratio
+    return average_aspect_ratio, left_eye_aspect_ratio, right_eye_aspect_ratio
 
-def get_ice_servers():
-    """Use Twilio's TURN server because Streamlit Community Cloud has changed
-    its infrastructure and WebRTC connection cannot be established without TURN server now.  # noqa: E501
-    We considered Open Relay Project (https://www.metered.ca/tools/openrelay/) too,
-    but it is not stable and hardly works as some people reported like https://github.com/aiortc/aiortc/issues/832#issuecomment-1482420656  # noqa: E501
-    See https://github.com/whitphx/streamlit-webrtc/issues/1213
-    """
 
-    # Ref: https://www.twilio.com/docs/stun-turn/api
-    try:
-        account_sid = os.environ["TWILIO_ACCOUNT_SID"]
-        auth_token = os.environ["TWILIO_AUTH_TOKEN"]
-    except KeyError:
-        logger.warning(
-            "Twilio credentials are not set. Fallback to a free STUN server from Google."  # noqa: E501
-        )
-        return [{"urls": ["stun:stun.l.google.com:19302"]}]
-
-    client = Client(account_sid, auth_token)
-
-    try:
-        token = client.tokens.create()
-    except TwilioRestException as e:
-        st.warning(
-            f"Error occurred while accessing Twilio API. Fallback to a free STUN server from Google. ({e})"  # noqa: E501
-        )
-        return [{"urls": ["stun:stun.l.google.com:19302"]}]
-
-    return token.ice_servers
-
-def get_perclos(frame):
+def style_table(df):
+    # Apply CSS styling to the DataFrame
+    styled_df = df.style.set_table_styles([
+        dict(selector="th", props=[("font-size", "14px"), ("text-align", "center"), ("background-color", "#3498db"), ("color", "white"), ("border", "1px solid #dddddd")]),
+        dict(selector="td", props=[("font-size", "14px"), ("text-align", "center"), ("border", "1px solid #dddddd")]),
+        dict(selector=".row-hover:hover", props=[("background-color", "#f2f2f2")]),
+        dict(selector=".blank_row", props=[("display", "none")])  # Hide blank rows
+    ])
+    return styled_df

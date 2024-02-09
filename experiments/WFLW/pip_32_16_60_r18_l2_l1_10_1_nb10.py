@@ -5,7 +5,7 @@ class Config():
         self.net_stride = 32
         self.batch_size = 16
         self.init_lr = 0.0001
-        self.num_epochs = 200
+        self.num_epochs = 100
         self.decay_steps = [30, 50]
         self.input_size = 256
         self.backbone = 'resnet18'
