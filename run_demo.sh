@@ -4,7 +4,7 @@
 # python lib/boundingbox.py experiments/WFLW/pip_32_16_60_r101_l2_l1_10_1_nb10.py data/WFLW/WFLW_images/inference_images/simon_16101988_196_session2 snapshots/WFLW/pip_32_16_60_r101_l2_l1_10_1_nb10
 
 # image, WFLW, demo
-python lib/demo.py experiments/WFLW/pip_32_16_60_r18_l2_l1_10_1_nb10.py data/WFLW/images_test_3 snapshots/WFLW/pip_32_16_60_r18_l2_l1_10_1_nb10
+# python lib/demo.py experiments/WFLW/pip_32_16_60_r18_l2_l1_10_1_nb10.py data/WFLW/images_test_3 snapshots/WFLW/pip_32_16_60_r18_l2_l1_10_1_nb10
 
 
 #python lib/demo.py experiments/data_300W_CELEBA/pip_32_16_60_r18_l2_l1_10_1_nb10_wcc.py images/2.jpg
@@ -26,7 +26,7 @@ python lib/demo.py experiments/WFLW/pip_32_16_60_r18_l2_l1_10_1_nb10.py data/WFL
 # python lib/demo_video.py experiments/WFLW/pip_32_16_60_mbv2_l2_l1_10_1_nb10.py /dev/video2 snapshots/WFLW/pip_32_16_60_mbv2_l2_l1_10_1_nb10
 # python lib/demo_video.py experiments/WFLW/pip_32_16_60_r101_l2_l1_10_1_nb10.py /dev/video2 snapshots/WFLW/pip_32_16_60_r101_l2_l1_10_1_nb10
 # python lib/demo_video.py experiments/WFLW/pip_32_16_60_mbv2_l2_l1_10_1_nb10.py /dev/video2 snapshots/WFLW/MobilenetV2_2/
-# python lib/demo_video.py experiments/WFLW/pip_32_16_60_r18_l2_l1_10_1_nb10.py /dev/video2 snapshots/WFLW/pip_32_16_60_r18_l2_l1_10_1_nb10
+python3 lib/demo_video.py experiments/WFLW/pip_32_16_60_r18_l2_l1_10_1_nb10.py /dev/video2 snapshots/WFLW/pip_32_16_60_r18_l2_l1_10_1_nb10
 # python source/demo_video.py experiments/WFLW/pip_32_16_60_r18_l2_l1_10_1_nb10.py /dev/video2 snapshots/WFLW/pip_32_16_60_r18_l2_l1_10_1_nb10
 
 # Image, WFLW, Mobilenet
