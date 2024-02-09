@@ -3,3 +3,9 @@ scipy
 Cython
 steamlit
 tqdm
+
+#The pytorch library should be installed dependently
+torch
+torchvision
+torchaudio
+
