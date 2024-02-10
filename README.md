@@ -9,6 +9,12 @@ To install the required dependencies, use the following command:
 pip3 install -r requirements.txt
 ```
 
+## This project use FaceBoxV2 for detecting facial bounding box, in order for the app to run, first the FaceBoxV2 must be built:
+```bash
+cd ./FaceBoxesV2/utils/
+sh make.sh
+```
+
 ## To run the program, execute the following command:
 ```bash
 streamlit run ./source/main.py
