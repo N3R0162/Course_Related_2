@@ -10,19 +10,21 @@ sh setup.sh
 ```
 Or the manual installation can be done by following the steps below.
 
-## Manual Installatio
+## Manual Installation
 To install the required dependencies, use the following command:
 ```bash
 pip3 install -r requirements.txt
 ```
 
-### This project use FaceBoxV2 for detecting facial bounding box, in order for the app to run, first the FaceBoxV2 must be built:
+#### FaceBoxesV2 build:
+This project use FaceBoxV2 for detecting facial bounding box, in order for the app to run, first the FaceBoxV2 must be built:
 ```bash
 cd ./FaceBoxesV2/utils/
 sh make.sh
 ```
 
-## To run the program, execute the following command:
+## Run:
+To run the program, execute the following command:
 ```bash
 streamlit run ./source/main.py
 ```
