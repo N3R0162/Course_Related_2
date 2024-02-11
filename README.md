@@ -3,7 +3,7 @@
 ## Description
 This application detects driver drowsiness based on the condition of their eyes. It utilizes eye landmarks to assess the level of drowsiness and provide alerts when necessary.
 
-# Auto Installation
+## Auto Installation
 The set up process can be done by running the following command after create a virtual environment:
 ```bash 
 sh setup.sh
