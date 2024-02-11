@@ -32,7 +32,7 @@ config_path = '.experiments.{}.{}'.format(data_name, experiment_name)
 video_file = "/dev/video2"  #Camera_path
 save_dir = "snapshots/WFLW/pip_32_16_60_r18_l2_l1_10_1_nb10"
 
-my_config = importlib.import_module(config_path, package='PIPNet')
+my_config = importlib.import_module(config_path, package='Course_Related_2')
 Config = getattr(my_config, 'Config')
 cfg = Config()
 cfg.experiment_name = experiment_name
@@ -73,7 +73,7 @@ def play_webcam():
     #Jetson Nano CSI Camera
     pipeline = 'nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720, format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink'
 
-    if st.sidebar.button('Test_PIPNet'):
+    if st.sidebar.button('Run'):
         try:
             detector = FaceBoxesDetector('FaceBoxes', 'FaceBoxesV2/weights/FaceBoxesV2.pth', True, torch.device("cuda:0"))
             my_thresh = 0.9
