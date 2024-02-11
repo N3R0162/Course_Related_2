@@ -3,7 +3,7 @@ scipy
 Cython
 streamlit
 tqdm
-
+twilio
 #The pytorch library should be installed dependently
 torch
 torchvision

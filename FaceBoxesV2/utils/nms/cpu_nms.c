@@ -4,18 +4,18 @@
 {
     "distutils": {
         "depends": [
-            "/home/kyv/WD_500G/Project/PIPNet/env/lib/python3.10/site-packages/numpy/core/include/numpy/arrayobject.h",
-            "/home/kyv/WD_500G/Project/PIPNet/env/lib/python3.10/site-packages/numpy/core/include/numpy/arrayscalars.h",
-            "/home/kyv/WD_500G/Project/PIPNet/env/lib/python3.10/site-packages/numpy/core/include/numpy/ndarrayobject.h",
-            "/home/kyv/WD_500G/Project/PIPNet/env/lib/python3.10/site-packages/numpy/core/include/numpy/ndarraytypes.h",
-            "/home/kyv/WD_500G/Project/PIPNet/env/lib/python3.10/site-packages/numpy/core/include/numpy/ufuncobject.h"
+            "/home/kyv/Desktop/Course_Related_2/env/lib/python3.10/site-packages/numpy/core/include/numpy/arrayobject.h",
+            "/home/kyv/Desktop/Course_Related_2/env/lib/python3.10/site-packages/numpy/core/include/numpy/arrayscalars.h",
+            "/home/kyv/Desktop/Course_Related_2/env/lib/python3.10/site-packages/numpy/core/include/numpy/ndarrayobject.h",
+            "/home/kyv/Desktop/Course_Related_2/env/lib/python3.10/site-packages/numpy/core/include/numpy/ndarraytypes.h",
+            "/home/kyv/Desktop/Course_Related_2/env/lib/python3.10/site-packages/numpy/core/include/numpy/ufuncobject.h"
         ],
         "extra_compile_args": [
             "-Wno-cpp",
             "-Wno-unused-function"
         ],
         "include_dirs": [
-            "/home/kyv/WD_500G/Project/PIPNet/env/lib/python3.10/site-packages/numpy/core/include"
+            "/home/kyv/Desktop/Course_Related_2/env/lib/python3.10/site-packages/numpy/core/include"
         ],
         "name": "nms.cpu_nms",
         "sources": [
