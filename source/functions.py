@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 import random
 import time
-from scipy.integrate import simps
+from scipy.integrate import simpson as simps
 from tqdm import tqdm
 logger = logging.getLogger(__name__)
 from twilio.base.exceptions import TwilioRestException
